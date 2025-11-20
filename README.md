@@ -1,138 +1,155 @@
 
 
-```md
-<div align="center">
-
-# 🌍 **EarthSense AI**  
-### *Satellite-based Deforestation Detection System*  
-**Real-Time AI for Environmental Monitoring**
-
-Built for **SkyHack 2025 — AI/ML for Space Data Interpretation**
 
 ---
 
-<img src="images/banner.png" width="100%" />
+<div align="center">
+
+# 🌍 **EarthSense AI**  
+### 🛰️ *Satellite-based Deforestation Detection System*  
+**AI + Earth Observation for Sustainable Planet Monitoring**
+
+Built for **SkyHack 2025 — AI/ML for Space Data Interpretation**  
+🔥 *Real-time Inference · Explainable AI · Batch Analysis · Clean UI*
+
+---
+
+<img src="images/banner.png?raw=true" width="100%" />
 
 </div>
 
 ---
 
-## 🚀 **Overview**
+# 🚀 **Overview**
 
-**EarthSense AI** is an end-to-end deep learning pipeline that detects **deforestation from satellite images** in real time.  
-It transforms Earth observation imagery into **actionable environmental insights** through:
+**EarthSense AI** is a complete deep-learning pipeline that detects **deforestation** instantly using satellite imagery.  
+The system converts raw Earth data into **clear, actionable environmental insights** through:
 
-✔ AI-powered detection  
-✔ Vegetation cover estimation  
-✔ Grad-CAM explainability  
-✔ Clean frontend for demos  
-✔ Batch analysis with CSV export  
+- 🌲 Forest-loss prediction  
+- 🟩 Vegetation cover estimation  
+- 🔥 Grad-CAM explainability  
+- 📦 Batch processing with exports  
+- 💻 Modern frontend UI  
 
----
-
-## 🎯 **Key Features**
-
-- ⚡ **Instant Deforestation Prediction**  
-- 🌿 **Vegetation Cover Estimation** (green pixel ratio)  
-- 🔥 **Explainable AI (Grad-CAM)** heatmaps  
-- 📂 **Batch Processing with CSV export**  
-- 💻 **Modern React + Vite Frontend**  
-- 🛰️ Works with any satellite/top-down image  
+It is designed for researchers, conservation groups, space agencies, hackathon judges & real-world deployments.
 
 ---
 
-## 🖼️ **Screenshots**
+# 🎯 **Core Features**
 
-All images must be inside the `images/` folder.
+### ⚡ Real-Time Deforestation Detection  
+Instant prediction with high accuracy.
+
+### 🌿 Vegetation Density Measurement  
+HSV-based green mask to detect forest density.
+
+### 🔥 Explainable AI (Grad-CAM)  
+Highlights the regions influencing the prediction.
+
+### 📂 Batch Image Analysis  
+Upload multiple images → get CSV results.
+
+### 💻 Sleek React Frontend  
+Modern dark UI built with Vite + React.
+
+### 🔗 Simple Flask API  
+Fast endpoints for single & batch predictions.
 
 ---
+
+# 🖼️ **Screenshots**
 
 ### 🏠 **Homepage**
 <p align="center">
-  <img src="images/home.png" width="85%" />
+  <img src="images/home.png?raw=true" width="90%" />
 </p>
 
 ---
 
 ### 🖼️ **Single Image Prediction**
 <p align="center">
-  <img src="images/single.png" width="85%" />
+  <img src="images/single.png?raw=true" width="90%" />
 </p>
 
 ---
 
-### 📦 **Batch Processing**
+### 📦 **Batch Processing Dashboard**
 <p align="center">
-  <img src="images/batch.png" width="85%" />
+  <img src="images/batch.png?raw=true" width="90%" />
 </p>
 
 ---
 
-## 🧩 **Problem Statement**
+# 🧩 **Problem Statement**
 
-Global deforestation is accelerating climate change, threatening biodiversity, and destabilizing ecosystems.  
-Manual analysis of satellite imagery is slow, inconsistent, and impossible at large scales.
+Deforestation is increasing globally, causing:
 
-👉 **EarthSense AI automates detection, visualization, and interpretation.**
+- 🌡️ Climate instability  
+- 🐾 Biodiversity loss  
+- 🌧️ Extreme weather  
+- 🏞️ Land degradation  
 
----
+Satellite imagery is abundant — but requires **automated, explainable, scalable** analysis.
 
-## 🧭 **How EarthSense Works**
-
-1. User uploads a satellite image (or multiple).  
-2. System preprocesses (resize, normalize).  
-3. CNN model predicts: **Deforested / Not Deforested**.  
-4. Vegetation percentage is calculated using HSV green masking.  
-5. Grad-CAM heatmap highlights important regions.  
-6. Results returned to frontend with metrics + images.  
+**EarthSense AI solves this** with a fast, interpretable model and intuitive dashboard.
 
 ---
 
-## 🧬 **Technical Overview**
+# 🧭 **How It Works**
 
-| Component | Technology |
-|----------|------------|
-| **Model** | TensorFlow/Keras CNN (transfer learning) |
-| **Explainability** | Grad-CAM heatmaps |
-| **Vegetation** | HSV mask + ratio |
-| **Backend** | Flask API (predict + batch) |
-| **Frontend** | React + Vite |
-| **Image Processing** | OpenCV + Pillow |
+### 📤 1. Upload Image  
+Single or batch.
 
----
+### 🔧 2. Preprocessing  
+Resize → Normalize → Transform.
 
-## 📁 **Project Structure**
+### 🤖 3. CNN Model Prediction  
+Detects: **Deforested / Not Deforested**  
+Returns confidence score.
 
-```
+### 🌿 4. Vegetation Fraction  
+HSV mask to estimate greenery.
 
-earthsense-ai/
-│
-├── backend/
-│   ├── app.py
-│   ├── utils.py
-│   ├── requirements.txt
-│   ├── model/
-│   │   └── class_indices.json
-│   └── .env
-│
-├── frontend/
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   └── src/
-│       ├── App.jsx
-│       ├── api.jsx
-│       └── components/
-│           ├── UploadCard.jsx
-│           └── BatchUpload.jsx
-│
-└── README.md
+### 🔥 5. Grad-CAM  
+Highlights important image regions.
 
-````
+### 📥 6. UI Visualization  
+Frontend displays all metrics + heatmap.
 
 ---
 
-## 📊 **Example API Output**
+# 🧬 **Tech Stack**
+
+### 🧠 Model  
+- TensorFlow / Keras (Transfer Learning: MobileNetV2)  
+- Custom classifier head  
+- Trained on labeled deforestation datasets  
+
+### 🧪 Explainability  
+- Grad-CAM (OpenCV + Keras)
+
+### 🖼️ Image Processing  
+- OpenCV  
+- Pillow  
+
+### 🧰 Backend  
+- Python Flask  
+- REST API for prediction & batch inference  
+
+### 💻 Frontend  
+- React + Vite  
+- Dark theme UI  
+- CSV export, toast notifications  
+
+---
+
+# 📁 **Project Structure**
+
+earthsense-ai/ │ ├── backend/ │   ├── app.py │   ├── utils.py │   ├── requirements.txt │   ├── model/ │   │   └── class_indices.json │   └── .env │ ├── frontend/ │   ├── index.html │   ├── package.json │   ├── vite.config.js │   └── src/ │       ├── App.jsx │       ├── api.jsx │       └── components/ │           ├── UploadCard.jsx │           └── BatchUpload.jsx │ └── images/ ├── banner.png ├── home.png ├── single.png └── batch.png
+
+---
+
+# 📊 **Example API Output**
 
 ```json
 {
@@ -142,73 +159,119 @@ earthsense-ai/
   "gradcam_base64": "<base64>",
   "inference_time_ms": 312
 }
-````
+
 
 ---
 
-## 🛠️ **Development Workflow**
+🛠️ Development Workflow
 
-### **Phase 1 — Research**
+🔍 Phase 1 — Research
 
-* Dataset survey
-* Selected deforestation for better demo clarity
+Dataset review
 
-### **Phase 2 — Model**
+Defined problem constraints
 
-* Preprocessing pipeline
-* Transfer learning (MobileNetV2)
-* Model training + validation
+Chose deforestation for clarity
 
-### **Phase 3 — Backend**
 
-* Prediction endpoint
-* Batch processing + CSV export
-* Grad-CAM utilities
+🧠 Phase 2 — Model
 
-### **Phase 4 — Frontend**
+Preprocessing pipeline
 
-* Upload UI
-* Batch dashboard
-* Heatmap + metrics visualization
+Transfer learning
 
-### **Phase 5 — Integration**
+Training + validation
 
-* API wiring
-* UI polish
-* Documentation + Screenshots
 
----
+🧪 Phase 3 — Backend
 
-## 🌍 **Use Cases**
+Prediction API
 
-* Conservation monitoring
-* Early-warning system for illegal logging
-* Government land management
-* NGO deforestation audits
-* Climate analysis pipelines
+Batch + CSV exporter
 
----
+Grad-CAM utilities
 
-## 🔭 **Future Enhancements**
 
-* 🌧️ Flood & landslide detection
-* 🕒 Time-series change detection
-* 📡 SAR-based analysis (radar imagery)
-* 🌏 Live global deforestation dashboard
-* 👤 User accounts + project-based runs
+💻 Phase 4 — Frontend
+
+Upload UI
+
+Result cards
+
+Batch dashboard
+
+
+🎨 Phase 5 — Integration & Polish
+
+Dark theme
+
+Better UX
+
+Screenshots + documentation
+
+
 
 ---
 
-## 👥 **Team**
+🌍 Real-World Applications
 
-**Ansuj K Meher**
-*AI/ML Engineer, Full-Stack Developer*
-📧 **[ansujkmeher@gmail.com](mailto:ansujkmeher@gmail.com)**
+🌲 Forest conservation & monitoring
+
+🛰️ Remote sensing analysis
+
+🚓 Illegal deforestation detection
+
+🌦️ Climate research
+
+🕵️ Rapid environmental audits
+
+🏛️ Government policy insights
+
+
 
 ---
 
-<div align="center">
+🔭 Roadmap
 
-## 🌱 *EarthSense AI — Turning Satellite Data into Environmental Intelligence.*
+⭐ Short-Term
 
-”**.
+Landslide detection
+
+Flood detection
+
+Better Grad-CAM overlays
+
+
+🌐 Long-Term
+
+Global live dashboard
+
+Multi-temporal change detection
+
+SAR-based analysis
+
+User login + cloud storage
+
+
+
+---
+
+👤 Team
+
+Ansuj K Meher
+
+AI/ML · Computer Vision · Full Stack
+📧 ansujkmeher@gmail.com
+
+
+---
+
+<div align="center">🌱 EarthSense AI — Turning Satellite Data Into Environmental Intelligence.
+
+
+
+</div>
+```
+---
+
+If you'd like an even more premium look (badges, shields, centered headers, animated banner GIF), just tell me "add badges and premium styling".
