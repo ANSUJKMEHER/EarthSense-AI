@@ -149,10 +149,7 @@ You want everything AFTER the Tech Stack section to look clean, simple, premium 
 Here is the perfect, professional, concise version that you can paste right after Tech Stack.
 
 
-`txt
-
-📁 Project Structure
-
+```txt
 earthsense-ai/
 │
 ├── backend/
@@ -179,12 +176,12 @@ earthsense-ai/
     ├── home.png
     ├── single.png
     └── batch.png
-
-`
+```
 ---
 
 📊 Sample API Output
 
+```json
 {
   "prediction": "Deforested",
   "confidence": 0.93,
@@ -192,8 +189,7 @@ earthsense-ai/
   "gradcam_base64": "<base64>",
   "inference_time_ms": 312
 }
-
-
+```
 ---
 
 🛠️ Development Flow (Short & Clear)
@@ -280,7 +276,6 @@ AI/ML & Full-Stack Developer
 
 
 
----
 
 <div align="center">🌱 EarthSense AI — Turning Satellite Data Into Environmental Intelligence.
 
