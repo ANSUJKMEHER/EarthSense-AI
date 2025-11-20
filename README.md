@@ -143,19 +143,52 @@ Frontend displays all metrics + heatmap.
 
 ---
 
-# 📁 **Project Structure**
+Got it.
+You want everything AFTER the Tech Stack section to look clean, simple, premium — not too long, not repetitive.
 
-earthsense-ai/ │ ├── backend/ │   ├── app.py │   ├── utils.py │   ├── requirements.txt │   ├── model/ │   │   └── class_indices.json │   └── .env │ ├── frontend/ │   ├── index.html │   ├── package.json │   ├── vite.config.js │   └── src/ │       ├── App.jsx │       ├── api.jsx │       └── components/ │           ├── UploadCard.jsx │           └── BatchUpload.jsx │ └── images/ ├── banner.png ├── home.png ├── single.png └── batch.png
+Here is the perfect, professional, concise version that you can paste right after Tech Stack.
+
 
 ---
 
-# 📊 **Example API Output**
+📁 Project Structure
 
-```json
+earthsense-ai/
+│
+├── backend/
+│   ├── app.py
+│   ├── utils.py
+│   ├── requirements.txt
+│   ├── model/
+│   │   └── class_indices.json
+│   └── .env
+│
+├── frontend/
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── src/
+│       ├── App.jsx
+│       ├── api.jsx
+│       └── components/
+│           ├── UploadCard.jsx
+│           └── BatchUpload.jsx
+│
+└── images/
+    ├── banner.png
+    ├── home.png
+    ├── single.png
+    └── batch.png
+
+
+---
+
+📊 Sample API Output
+
 {
   "prediction": "Deforested",
-  "confidence": 0.9321,
-  "vegetation_fraction": 0.147,
+  "confidence": 0.93,
+  "vegetation_fraction": 0.14,
   "gradcam_base64": "<base64>",
   "inference_time_ms": 312
 }
@@ -163,105 +196,88 @@ earthsense-ai/ │ ├── backend/ │   ├── app.py │   ├── uti
 
 ---
 
-🛠️ Development Workflow
+🛠️ Development Flow (Short & Clear)
 
-🔍 Phase 1 — Research
+1️⃣ Model
 
-Dataset review
+Preprocessing
 
-Defined problem constraints
+Transfer learning (MobileNetV2)
 
-Chose deforestation for clarity
-
-
-🧠 Phase 2 — Model
-
-Preprocessing pipeline
-
-Transfer learning
-
-Training + validation
+Training & evaluation
 
 
-🧪 Phase 3 — Backend
+2️⃣ Backend
 
-Prediction API
+Flask API (predict + batch_predict)
 
-Batch + CSV exporter
+Grad-CAM generator
 
-Grad-CAM utilities
-
-
-💻 Phase 4 — Frontend
-
-Upload UI
-
-Result cards
-
-Batch dashboard
+Image utilities (OpenCV + Pillow)
 
 
-🎨 Phase 5 — Integration & Polish
+3️⃣ Frontend
 
-Dark theme
+React + Vite interface
 
-Better UX
+Single & batch upload UI
 
-Screenshots + documentation
+Confidence, vegetation %, heatmap display
+
+
+4️⃣ Integration
+
+Connect API ↔ frontend
+
+UI polish & error handling
+
+Prepare screenshots + final testing
 
 
 
 ---
 
-🌍 Real-World Applications
+🌍 Use Cases
 
-🌲 Forest conservation & monitoring
+Forest-loss monitoring
 
-🛰️ Remote sensing analysis
+Rapid environmental audits
 
-🚓 Illegal deforestation detection
+Illegal logging detection
 
-🌦️ Climate research
+Research & climate studies
 
-🕵️ Rapid environmental audits
-
-🏛️ Government policy insights
+Satellite image pre-filtering
 
 
 
 ---
 
-🔭 Roadmap
+🔭 Future Enhancements
 
-⭐ Short-Term
+Flood & landslide detection
 
-Landslide detection
+Multi-temporal change analysis
 
-Flood detection
+SAR-based processing
 
-Better Grad-CAM overlays
+Global deforestation dashboard
 
-
-🌐 Long-Term
-
-Global live dashboard
-
-Multi-temporal change detection
-
-SAR-based analysis
-
-User login + cloud storage
+User accounts + cloud storage
 
 
 
 ---
 
-👤 Team
+👤 Developer
 
 Ansuj K Meher
-
-AI/ML · Computer Vision · Full Stack
+AI/ML & Full-Stack Developer
 📧 ansujkmeher@gmail.com
+
+
+---
+
 
 
 ---
@@ -274,4 +290,4 @@ AI/ML · Computer Vision · Full Stack
 ```
 ---
 
-If you'd like an even more premium look (badges, shields, centered headers, animated banner GIF), just tell me "add badges and premium styling".
+
