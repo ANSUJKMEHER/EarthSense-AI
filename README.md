@@ -149,7 +149,7 @@ You want everything AFTER the Tech Stack section to look clean, simple, premium 
 Here is the perfect, professional, concise version that you can paste right after Tech Stack.
 
 
----
+`txt
 
 📁 Project Structure
 
@@ -180,7 +180,7 @@ earthsense-ai/
     ├── single.png
     └── batch.png
 
-
+`
 ---
 
 📊 Sample API Output
