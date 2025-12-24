@@ -143,10 +143,6 @@ Frontend displays all metrics + heatmap.
 
 ---
 
-Got it.
-You want everything AFTER the Tech Stack section to look clean, simple, premium — not too long, not repetitive.
-
-Here is the perfect, professional, concise version that you can paste right after Tech Stack.
 
 
 ```txt
