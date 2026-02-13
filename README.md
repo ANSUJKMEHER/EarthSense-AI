@@ -264,7 +264,7 @@ User accounts + cloud storage
 👤 Developer
 
 Ansuj K Meher
-AI/ML & Full-Stack Developer
+AI/ML & Full-Stack Developer.
 📧 ansujkmeher@gmail.com
 
 
