@@ -11,7 +11,6 @@
 
 Built for **SkyHack 2025 — AI/ML for Space Data Interpretation**  
 🔥 *Real-time Inference · Explainable AI · Batch Analysis · Clean UI*
-
 ---
 
 <img src="images/banner.png?raw=true" width="100%" />
